@@ -7,3 +7,9 @@ const PORT = process.env.PORT || 3001;
 // require routes
 
 // middleware
+
+// Listener
+// ===========================================================
+app.listen(PORT, () => {
+  console.log(`App listening on PORT ${PORT}`);
+});
