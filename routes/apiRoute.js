@@ -1,6 +1,7 @@
 // <!-- The application should have a db.json file on the back end that will be used to store and retrieve notes using the fs module. -->
 const fs = require("fs");
 // GET /api/notes - should read the db.json file and return all saved notes as JSON.
+//ReferenceError: app is not defined at Object.<anonymous> (C:\Users\berto\Desktop\projects\11-note-taker\routes\apiRoute.js:4:1)
 app.get("/api/notes", (req, res) => {
   res.json(savedNotes);
 });

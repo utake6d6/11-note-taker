@@ -1,0 +1,24 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utake6d6/11-note-taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/utake6d6/11-note-taker/issues"
+  },
+  "homepage": "https://github.com/utake6d6/11-note-taker#readme"
+}

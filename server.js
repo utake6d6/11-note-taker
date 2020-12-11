@@ -5,7 +5,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // require routes
-
+const apiRoute = require("./routes/apiRoute");
+const htmlRoute = require("./routes/htmlRoute");
 // middleware
 
 // Listener
