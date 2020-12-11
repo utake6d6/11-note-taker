@@ -4,6 +4,6 @@ const path = require("path");
 
 // GET /notes - should return the notes.html file.
 app.get("/notes", (req, res) => {
-  res.sendFile(path.join__dirname);
+  res.sendFile(path.join__dirname, "");
 });
 // GET * - should return the index.html file. -->
