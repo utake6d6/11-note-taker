@@ -26,7 +26,7 @@ Use "node start" to run the app
 
 Access site: https://bert-note-taker.herokuapp.com/
 
-![Usage](public\assets\imgs\2020-12-13 (3).png)
+![Usage](public/assets/imgs/2020-12-13 (3).png)
 
 ## License:
 
