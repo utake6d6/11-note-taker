@@ -2,6 +2,8 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
+![Usage](public/assets/imgs/mainsite.png)
+
 ## Table of Contents:
 
 - [Description](#description)
@@ -26,7 +28,7 @@ Use "node start" to run the app
 
 Access site: https://bert-note-taker.herokuapp.com/
 
-![Usage](public/assets/imgs/2020-12-13 (3).png)
+![Usage](public/assets/imgs/notespg.png)
 
 ## License:
 
