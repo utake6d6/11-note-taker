@@ -20,8 +20,7 @@ app.use(express.static("public"));
 app.use("/api", apiRoute);
 app.use("/", htmlRoute);
 
-// Listener
-// ===========================================================
+// listener:
 app.listen(PORT, () => {
   console.log(`App listening on PORT ${PORT}`);
 });
