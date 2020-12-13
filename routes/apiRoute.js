@@ -9,7 +9,7 @@ const { v4: uuidv4 } = require("uuid");
 //ReferenceError: app is not defined at Object.<anonymous> (C:\Users\berto\Desktop\projects\11-note-taker\routes\apiRoute.js:4:1)
 app.get("/api/notes", (req, res) => {
   let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
-  res.json(notes);
+  res.json(collection);
 });
 
 // POST /api/notes - should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client.
@@ -23,16 +23,14 @@ app.post("/api/notes", (req, res) => {
 
   // add it to the db.json file
   let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
-  notes.push(newNote);
+  // collection.push() appends one or more element(s) to the end of the collection instance and returns the edited collection
+  collection.push(newNote);
   // save on the request body
-  fs.writeFileSync("./db/db.json", JSON.stringify(notes));
+  fs.writeFileSync("./db/db.json", JSON.stringify(collection));
   console.log("New note added.");
   // return the new note to the client
-  res.json(notes);
+  res.json(collection);
 });
-
-// <!-- Bonus
-// You haven’t learned how to handle DELETE requests, but this application has that functionality in the front end. As a bonus, see if you can add the DELETE route to the application using the following guideline:
 
 // DELETE /api/notes/:id - should receive a query parameter containing the id of a note to delete. In order to delete a note, you'll need to read all notes from the db.json file, remove the note with the given id property, and then rewrite the notes to the db.json file. -->
 app.delete("/api/notes/:id", (req, res) => {
