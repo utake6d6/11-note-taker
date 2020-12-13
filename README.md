@@ -2,8 +2,6 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-<img src="assets\images\install.png">
-
 ## Table of Contents:
 
 - [Description](#description)
@@ -16,11 +14,19 @@
 
 ## Description:
 
+This application saves and pulls notes data from a JSON file that's deployed to Heroku.
+
 ## Installation:
+
+Clone repository https://github.com/utake6d6/11-note-taker
+Install Node.js, express, fs and npm module uuid.
+Use "node start" to run the app
 
 ## Usage:
 
-![Usage]()
+Access site: https://bert-note-taker.herokuapp.com/
+
+![Usage](public\assets\imgs\2020-12-13 (3).png)
 
 ## License:
 
@@ -31,6 +37,8 @@ MIT
 This project may be forked.
 
 ## Tests:
+
+Routes tested using Insomnia Core.
 
 ## Questions:
 
